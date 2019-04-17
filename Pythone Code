@@ -34,10 +34,7 @@ class MainWindow(QWidget):
 
     def Sonuc(self):
         hız = int(self.lineEditYol.text()) / int(self.lineEditSure.text())
-        ButtonHesap = QMessageBox.question(self, 'Hız',str(hız),
-                                           QMessageBox.Yes, QMessageBox.Yes)
-
-
+        ButtonHesap = QMessageBox.information(self, 'Hız',str(hız))
 
 def main():
     app = QApplication(sys.argv)
